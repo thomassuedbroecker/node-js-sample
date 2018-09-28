@@ -1,38 +1,25 @@
 # node-js-sample
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A sample Node.js app using [Express 4](http://expressjs.com/).
+This sample is related to [Docker on open whisk](http://heidloff.net/article/how-to-create-docker-actions-openwhisk-bluemix)
 
-## Running Locally
+## Running the node sample locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Make sure you have 
+* [Node.js](http://nodejs.org/).
+* [Docker](https://www.docker.com).
+
 
 ```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
+git clone https://github.com/thomassuedbroecker/node-js-sample.git # or clone your own fork
 cd node-js-sample
 npm install
-npm start
+node app.js
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-heroku create
-git push heroku master
-heroku open
+This was already created for more details take a look [here](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+```sh
+touch Dockerfile
 ```
 
-Alternatively, you can deploy your own copy of the app using the web-based flow:
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [10 Habits of a Happy Node Hacker](https://blog.heroku.com/archives/2014/3/11/node-habits)
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+Your app should now be running on [localhost:8080](http://localhost:8080/).
